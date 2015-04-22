@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<launch>
+    <node name="remote_ope" pkg="remote_ope" type="remote_operator.py">
+        <param name="robot_num" value="10"/>
+        <remap from="remote_commands" to="remote_commands"/>
+        <remap from="joy" to="joy"/>
+    </node>
+</launch>
